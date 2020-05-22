@@ -1,4 +1,7 @@
 #content {
-  width: 75%;
+  width: 95%;
   margin: auto;
+}
+img.sitePreview {
+  width: 100%;
 }
