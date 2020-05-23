@@ -1,7 +1,32 @@
+body {
+  background-image: url("images/webBackground.jpg");
+  background-color: #fa902c;
+}
+
 #content {
   width: 95%;
   margin: auto;
 }
 img.sitePreview {
   width: 100%;
+}
+
+#logo {
+  float: left;
+  width: 5em;
+}
+#topText {
+  width: 100%;
+}
+#topText h1 {
+  font-size: 1.65em;
+  margin-bottom: 0.2em;
+}
+#topText h2 {
+  width: 100%;
+  font-size: 1em;
+  margin-top: 0.2em;
+}
+main {
+  display: block;
 }
