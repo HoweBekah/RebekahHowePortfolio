@@ -66,12 +66,21 @@ section.whiteBack {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   margin: 1.5em 0.5em;
+  color: #170b0b;
 }
 section.whiteBack h3 {
   margin-top: 0;
+  margin-bottom: 0.7em;
+  text-shadow: 0.1em 0.1em 0.4em white;
 }
 section.whiteBack p {
   margin: 0;
+  font-weight: bolder;
+}
+
+section.whiteBack ul {
+  font-weight: bolder;
+  list-style-image: url("../images/bulletpoint.png");
 }
 
 footer {
