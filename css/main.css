@@ -27,7 +27,7 @@ img.sitePreview {
 }
 
 img.sitePreview:hover {
-  transform: scale(1.25, 1.25);
+  transform: scale(1.15, 1.15);
 }
 
 header {
@@ -78,7 +78,9 @@ section.whiteBack {
 section.whiteBack h3 {
   margin-top: 0;
   margin-bottom: 0.7em;
-  text-shadow: 0.1em 0.1em 0.4em white;
+  color: white;
+  font-weight: lighter;
+  /* text-shadow: 0.1em 0.1em 0.4em white; */
 }
 section.whiteBack p {
   margin: 0;
