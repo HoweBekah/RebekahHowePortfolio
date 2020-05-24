@@ -23,7 +23,11 @@ h6 {
   margin: auto;
 }
 img.sitePreview {
-  width: 100%;
+  width: 75%;
+}
+
+img.sitePreview:hover {
+  transform: scale(1.25, 1.25);
 }
 
 header {
@@ -94,6 +98,7 @@ section.whiteBack ul {
 #fullGallery {
   text-shadow: none;
   margin-top: 1em;
+  color: #170b0b;
 }
 
 #fullGallery a {
@@ -127,9 +132,11 @@ section.whiteBack ul {
   background-color: #3d3a59;
   color: white;
   margin: 1.5em;
+  margin-bottom: 0;
   padding: 0.5em;
   text-align: center;
   border: none;
+  border-radius: 5px;
 }
 
 .buttons:hover {
