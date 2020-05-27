@@ -122,7 +122,7 @@ section.whiteBack ul {
 .expand {
   color: #3d3a59;
   border: 0.1em dashed #170b0b;
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline;
   padding: 0.3em;
 }
@@ -173,9 +173,20 @@ footer {
   text-align: center;
 }
 #footerText {
+  color: #3d3a59;
   text-align: left;
 }
 
+#footerText a {
+  color: #3d3a59;
+}
+
+#footerText a:hover {
+  color: white;
+  padding: 0.4em;
+  background-color: rgba(61, 58, 89, 0.76);
+  border-radius: 5px;
+}
 #footerText p {
   margin-top: 0;
   margin-bottom: 0.7em;
@@ -190,7 +201,14 @@ footer {
   width: max-content;
 }
 
-@media screen and (min-width: 480px) {
+#footerImg img {
+  border-radius: 10px;
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  #content {
+    width: 80%;
+    margin: auto;
+  }
   #backText,
   #expDiv,
   #Projects {
@@ -198,5 +216,63 @@ footer {
   }
   .expandDiv {
     display: none;
+  }
+  #footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+    margin: 1em;
+  }
+  #footerText {
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
+    text-align: right;
+    font-size: 1.25em;
+  }
+  #footerImg {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #footerImg img {
+    height: 12em;
+    width: auto;
+  }
+}
+@media screen and (min-width: 801px) {
+  #content {
+    width: 75%;
+    margin: auto;
+  }
+  #backText,
+  #expDiv,
+  #Projects {
+    display: block;
+  }
+  .expandDiv {
+    display: none;
+  }
+  #footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+    margin: 1em auto;
+  }
+  #footerText {
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
+    text-align: right;
+    font-size: 1.5em;
+  }
+  #footerImg {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #footerImg img {
+    height: 15em;
+    width: auto;
   }
 }
