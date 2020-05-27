@@ -110,7 +110,11 @@ section.whiteBack ul {
 #fullGallery a:hover {
   text-shadow: 0.1em 0.1em 0.4em white;
 }
-
+#backText,
+#expDiv,
+#Projects {
+  display: none;
+}
 #homeButton {
   margin: 0.5em auto;
 }
@@ -164,4 +168,12 @@ footer {
 #footerText h3 {
   margin-top: 0;
   margin-bottom: 0.7em;
+}
+
+@media screen and (min-width: 480px) {
+  #backText,
+  #expDiv,
+  #Projects {
+    display: block;
+  }
 }
