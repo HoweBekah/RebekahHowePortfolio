@@ -69,6 +69,7 @@ a {
 }
 section.whiteBack {
   padding: 0.75em;
+
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   margin: 1.5em 0.5em;
@@ -115,6 +116,22 @@ section.whiteBack ul {
 #Projects {
   display: none;
 }
+.expandDiv {
+  margin-bottom: 0.5em;
+}
+.expand {
+  color: #3d3a59;
+  border: 0.1em dashed #170b0b;
+  border-radius: 10px;
+  display: inline;
+  padding: 0.3em;
+}
+.expand:hover {
+  box-shadow: 0.1em 0.1em 0.4em white;
+}
+.expand:active {
+  box-shadow: 0.1em 0.1em 0.4em white;
+}
 #homeButton {
   margin: 0.5em auto;
 }
@@ -157,7 +174,6 @@ footer {
 }
 #footerText {
   text-align: left;
-  margin-left: 1.4em;
 }
 
 #footerText p {
@@ -169,11 +185,18 @@ footer {
   margin-top: 0;
   margin-bottom: 0.7em;
 }
+#footerContent {
+  margin: auto;
+  width: max-content;
+}
 
 @media screen and (min-width: 480px) {
   #backText,
   #expDiv,
   #Projects {
     display: block;
+  }
+  .expandDiv {
+    display: none;
   }
 }

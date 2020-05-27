@@ -37,13 +37,14 @@
             through compassionate service, faith, and creativity. While I have
             extensive frontend experience, which can be seen throughout my
             different projects, I have backend experience as well. These skills
-            and goals I have will contribute to the happiness and success of my
-            team. team.
+            and goals will contribute to the happiness and success of my team.
           </p>
         </section>
         <section class="whiteBack">
           <h3>Experience</h3>
-          <h4 class="expand" onclick="dropDown('experience')">Expand</h4>
+          <div class="expandDiv">
+            <h4 class="expand" onclick="dropDown('experience')">Expand</h4>
+          </div>
           <div id="expDiv">
             <ul>
               <li>HTML5</li>
@@ -66,7 +67,9 @@
         </section>
         <section class="whiteBack" id="background">
           <h3>Background</h3>
-          <h4 class="expand" onclick="dropDown('background')">Expand</h4>
+          <div class="expandDiv">
+            <h4 class="expand" onclick="dropDown('background')">Expand</h4>
+          </div>
           <div id="backText">
             <p>
               I am the youngest of 10 children, and I am grateful that I come
@@ -97,7 +100,9 @@
         <section class="whiteBack">
           <div id="projectGallery">
             <h3>Project Highlights</h3>
-            <h4 class="expand" onclick="dropDown('highlights')">Expand</h4>
+            <div class="expandDiv">
+              <h4 class="expand" onclick="dropDown('highlights')">Expand</h4>
+            </div>
             <div id="Projects">
               <section>
                 <h2>
@@ -187,31 +192,33 @@
         </section>
       </main>
       <footer>
-        <div id="footerText">
-          <h3>Contact Me</h3>
-          <p>
-            <a href="mailto:bekahhowe@hotmail.com">bekahhowe@hotmail.com</a>
-          </p>
-          <p><a href="tel:520-442-8959">520-442-8959</a></p>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/rebekah-howe-6737b1132/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-          <p>
-            <a href="Documents/RebekahHoweResume2020.pdf" target="_blank"
-              >Resume</a
-            >
-          </p>
-        </div>
-        <div>
-          <img
-            src="images/webheadshot.jpg"
-            alt="Photo of Rebekah Howe"
-            width="200"
-          />
+        <div id="footerContent">
+          <div id="footerText">
+            <h3>Contact Me</h3>
+            <p>
+              <a href="mailto:bekahhowe@hotmail.com">bekahhowe@hotmail.com</a>
+            </p>
+            <p><a href="tel:520-442-8959">520-442-8959</a></p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/rebekah-howe-6737b1132/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+            <p>
+              <a href="Documents/RebekahHoweResume2020.pdf" target="_blank"
+                >Resume</a
+              >
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/webheadshot.jpg"
+              alt="Photo of Rebekah Howe"
+              width="200"
+            />
+          </div>
         </div>
       </footer>
     </div>
