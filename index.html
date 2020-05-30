@@ -40,71 +40,81 @@
             and goals will contribute to the happiness and success of my team.
           </p>
         </section>
-        <section class="whiteBack">
-          <h3>Experience</h3>
-          <div class="expandDiv">
-            <h4 class="expand" onclick="dropDown('experience')">Expand</h4>
-          </div>
-          <div id="expDiv">
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-              <li>Java</li>
-              <li>C#</li>
-              <li>Github</li>
-              <li>Visual Studio</li>
-              <li>Adobe Suite</li>
-              <li>Microsoft Office Suite</li>
-              <li>Node.js</li>
-              <li>PHP</li>
-              <li>SQL</li>
-              <li>Visual Studio Code</li>
-              <li>ASP.NET</li>
-            </ul>
-          </div>
-        </section>
-        <section class="whiteBack" id="background">
-          <h3>Background</h3>
-          <div class="expandDiv">
-            <h4 class="expand" onclick="dropDown('background')">Expand</h4>
-          </div>
-          <div id="backText">
-            <p>
-              I am the youngest of 10 children, and I am grateful that I come
-              from a large family. All of my siblings were able to help my
-              parents take care of me as a child, this is especially important
-              because I was born without many important bones, tendons, and
-              ligaments in my right leg and foot. I needed a great deal of care
-              through out all of my surgeries. Life has not been easy, but I
-              have learned to be persistent, determined, strong, and patient
-              because of the limitations I have.
-            </p>
-            <p>
-              I am a member of The Church of Jesus Christ of Latter-Day Saints,
-              and my beliefs sit at the core of who I am. I have learned how to
-              rely on Jesus Christ and my loved ones through out my life. I know
-              that I cannot do everything by myself and need to ask for help
-              sometimes.
-            </p>
-            <p>
-              Some of the things I love most in this world are my family, my
-              friends, Jesus Christ and His gospel, my dog Jett, and any kind of
-              digital entertainment (movies, tv, and music). I enjoy learning
-              new things from those around me and being able to teach others the
-              knowledge I have as well.
-            </p>
-          </div>
-        </section>
+        <div id="expBack">
+          <section id="experience">
+            <div class="whiteBack">
+              <h3>Experience</h3>
+              <div class="expandDiv">
+                <h4 class="expand" onclick="dropDown('experience')">
+                  Click to View
+                </h4>
+              </div>
+              <div id="expDiv">
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Git</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>Github</li>
+                  <li>Visual Studio</li>
+                  <li>Adobe Suite</li>
+                  <li>Microsoft Office Suite</li>
+                  <li>Node.js</li>
+                  <li>PHP</li>
+                  <li>SQL</li>
+                  <li>Visual Studio Code</li>
+                  <li>ASP.NET</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="whiteBack" id="background">
+            <h3>Background</h3>
+            <div class="expandDiv">
+              <h4 class="expand" onclick="dropDown('background')">
+                Click to View
+              </h4>
+            </div>
+            <div id="backText">
+              <p>
+                I am the youngest of 10 children, and I am grateful that I come
+                from a large family. All of my siblings were able to help my
+                parents take care of me as a child, this is especially important
+                because I was born without many important bones, tendons, and
+                ligaments in my right leg and foot. I needed a great deal of
+                care through out all of my surgeries. Life has not been easy,
+                but I have learned to be persistent, determined, strong, and
+                patient because of the limitations I have.
+              </p>
+              <p>
+                I am a member of The Church of Jesus Christ of Latter-Day
+                Saints, and my beliefs sit at the core of who I am. I have
+                learned how to rely on Jesus Christ and my loved ones through
+                out my life. I know that I cannot do everything by myself and
+                need to ask for help sometimes.
+              </p>
+              <p>
+                Some of the things I love most in this world are my family, my
+                friends, Jesus Christ and His gospel, my dog Jett, and any kind
+                of digital entertainment (movies, tv, and music). I enjoy
+                learning new things from those around me and being able to teach
+                others the knowledge I have as well.
+              </p>
+            </div>
+          </section>
+        </div>
         <section class="whiteBack">
           <div id="projectGallery">
             <h3>Project Highlights</h3>
             <div class="expandDiv">
-              <h4 class="expand" onclick="dropDown('highlights')">Expand</h4>
+              <h4 class="expand" onclick="dropDown('highlights')">
+                Click to View
+              </h4>
             </div>
             <div id="Projects">
-              <section>
+              <section id="tidbits">
                 <h2>
                   TV Movie Tidbits
                 </h2>
@@ -125,7 +135,7 @@
                   onClick="window.open('https://github.com/HoweBekah/tvmovietidbits')"
                 />
               </section>
-              <section>
+              <section id="idweather">
                 <h2>
                   Southeast ID the Weather
                 </h2>
@@ -146,7 +156,7 @@
                 />
               </section>
 
-              <section>
+              <section id="standardWorks">
                 <h2>
                   In Progress: Standard Works Chapter Generator
                 </h2>
@@ -165,7 +175,7 @@
                   onClick="window.open('https://github.com/HoweBekah/randomScriptureGenerator')"
                 />
               </section>
-              <section>
+              <section id="cookbook">
                 <h2>
                   In Progress: Howe Family Cookbook
                 </h2>
@@ -186,9 +196,9 @@
               </section>
             </div>
           </div>
-          <h2 id="fullGallery">
+          <h1 id="fullGallery">
             <a href="projectgallery.html">Full Project Gallery</a>
-          </h2>
+          </h1>
         </section>
       </main>
       <footer>
