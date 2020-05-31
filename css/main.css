@@ -33,7 +33,6 @@ img.sitePreview:hover {
 header {
   padding: 0.75em;
   background-color: rgba(255, 223, 111, 0.75);
-  /* opacity: 50%; */
   border-radius: 10px;
 }
 
@@ -56,6 +55,9 @@ header {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1;
   margin: auto;
+}
+#headerContent {
+  position: relative;
 }
 #topText h1 {
   font-size: 1.5em;
@@ -125,7 +127,8 @@ a {
 }
 #backText,
 #expDiv,
-#Projects {
+#Projects,
+#homeProgress {
   display: none;
 }
 #Projects section {
@@ -159,10 +162,13 @@ a {
 .expand:active {
   box-shadow: 0.1em 0.1em 0.4em white;
 }
+
 #homeButton {
   margin: 0.5em 1em;
-
   text-align: right;
+  position: absolute;
+  bottom: -0.89em;
+  right: 0;
 }
 
 #homeButton a {
@@ -172,11 +178,10 @@ a {
 }
 
 #homeButton a:hover {
-  color: rgb(255, 223, 111);
-  font-weight: lighter;
+  color: #3d3a59;
 }
 #galleryTitle {
-  margin-top: 0em;
+  margin-top: 1em;
   color: white;
   margin-bottom: 0;
 }
@@ -213,7 +218,7 @@ footer {
 }
 
 #footerText a {
-  color: #3d3a59;
+  color: #170b0b;
 }
 
 #footerText a:hover {
@@ -247,7 +252,8 @@ footer {
   }
   #backText,
   #expDiv,
-  #Projects {
+  #Projects,
+  #homeProgress {
     display: block;
   }
 
@@ -267,6 +273,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+  }
+  div#expBack .whiteBack {
+    margin-top: 0;
   }
 
   #experience {
@@ -356,21 +365,21 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 2em;
-    margin: 1em;
+    margin: 1em auto;
   }
   #footerText {
     grid-column: 1;
     grid-row: 1;
     float: left;
     text-align: right;
-    font-size: 1.25em;
   }
+
   #footerImg {
     grid-column: 2;
     grid-row: 1;
   }
   #footerImg img {
-    height: 12em;
+    height: 10em;
     width: auto;
   }
 }
@@ -381,7 +390,8 @@ footer {
   }
   #backText,
   #expDiv,
-  #Projects {
+  #Projects,
+  #homeProgress {
     display: block;
   }
   .expandDiv {
@@ -392,6 +402,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+  }
+
+  div#expBack .whiteBack {
+    margin-top: 0;
   }
 
   #experience {
@@ -497,14 +511,14 @@ footer {
     grid-row: 1;
     float: left;
     text-align: right;
-    font-size: 1.5em;
   }
+
   #footerImg {
     grid-column: 2;
     grid-row: 1;
   }
   #footerImg img {
-    height: 15em;
+    height: 10em;
     width: auto;
   }
 }

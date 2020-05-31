@@ -2,6 +2,7 @@ function dropDown(clickedSection) {
   var backVar = document.getElementById("backText");
   var expVar = document.getElementById("expDiv");
   var highlightVar = document.getElementById("Projects");
+  var progress = document.getElementById("homeProgress");
 
   switch (clickedSection) {
     case "experience":
@@ -21,8 +22,10 @@ function dropDown(clickedSection) {
     case "highlights":
       if (highlightVar.style.display == "block") {
         highlightVar.style.display = "none";
+        progress.style.display = "none";
       } else {
         highlightVar.style.display = "block";
+        progress.style.display = "block";
       }
       break;
     default:
