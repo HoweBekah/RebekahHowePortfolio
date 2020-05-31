@@ -39,13 +39,23 @@ header {
 
 #logo {
   margin-right: 0.5em;
-  float: left;
+  grid-column: 1;
   width: 5em;
 }
 #topText {
-  width: 100%;
+  width: max-content;
   color: white;
   text-shadow: 0em 0.2em 0.4em black;
+  text-align: left;
+  grid-column: 2;
+}
+#headerDiv {
+  width: fit-content;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1;
+  margin: auto;
 }
 #topText h1 {
   font-size: 1.5em;
@@ -76,11 +86,12 @@ a {
   color: #170b0b;
   text-align: left;
 }
-.whiteBack h3 {
+.whiteBack h2 {
   margin-top: 0;
   margin-bottom: 0.7em;
   color: white;
   font-weight: lighter;
+  text-align: center;
   /* text-shadow: 0.1em 0.1em 0.4em white; */
 }
 .whiteBack p {
@@ -117,6 +128,21 @@ a {
 #Projects {
   display: none;
 }
+#Projects section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+#ProjectsTwo section {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
 .expandDiv {
   margin-bottom: 0.5em;
 }
@@ -134,12 +160,15 @@ a {
   box-shadow: 0.1em 0.1em 0.4em white;
 }
 #homeButton {
-  margin: 0.5em auto;
+  margin: 0.5em 1em;
+
+  text-align: right;
 }
 
 #homeButton a {
   color: white;
   font-weight: lighter;
+  font-size: x-large;
 }
 
 #homeButton a:hover {
@@ -147,17 +176,22 @@ a {
   font-weight: lighter;
 }
 #galleryTitle {
-  margin-top: 0.5em;
+  margin-top: 0em;
+  color: white;
+  margin-bottom: 0;
 }
-
+#progress {
+  margin-top: 0.25em;
+  font-weight: bolder;
+}
 .buttons {
+  width: fit-content;
+  height: fit-content;
   font-family: "Bree Serif", serif;
   font-size: 1.2em;
   background-color: #3d3a59;
   color: white;
-  margin: 1.5em;
-  margin-bottom: 0;
-  padding: 0.5em;
+  padding: 0.65em;
   text-align: center;
   border: none;
   border-radius: 5px;
@@ -183,9 +217,10 @@ footer {
 }
 
 #footerText a:hover {
-  color: white;
-  padding: 0.4em;
-  background-color: rgba(61, 58, 89, 0.76);
+  /* color: white; */
+  padding-bottom: 0.15em;
+  /* background-color: rgba(61, 58, 89, 0.76); */
+  border-bottom: 0.2em solid white;
   border-radius: 5px;
 }
 #footerText p {
@@ -215,6 +250,7 @@ footer {
   #Projects {
     display: block;
   }
+
   .expandDiv {
     display: none;
   }
@@ -241,6 +277,16 @@ footer {
     grid-column: 2;
   }
 
+  #ProjectsTwo section {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 10em 3em;
+    justify-items: center;
+    align-items: center;
+    row-gap: 0.75em;
+  }
+
   #Projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -261,6 +307,49 @@ footer {
   #cookbook {
     grid-row: 2;
     grid-column: 2;
+  }
+
+  #ProjectsTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 2em;
+  }
+  #tidbitsTwo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  #yana {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  #idweatherTwo {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #kooky {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  #temple {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  #hale {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  #standardWorksTwo {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  #cookbookTwo {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  #joy {
+    grid-row: 5;
+    grid-column: 1;
   }
   #footerContent {
     display: grid;
@@ -333,6 +422,67 @@ footer {
   #cookbook {
     grid-row: 2;
     grid-column: 2;
+  }
+  #ProjectsTwo section {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 10em 3em;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.5em;
+  }
+  #ProjectsTwo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2em;
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+  #tidbitsTwo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  #yana {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  #idweatherTwo {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  #kooky {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #temple {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  #hale {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  #standardWorksTwo {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  #cookbookTwo {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  #joy {
+    grid-row: 3;
+    grid-column: 3;
+  }
+
+  img.sitePreview {
+    width: 10em;
+  }
+
+  img.sitePreview:hover {
+    transform: scale(1.15, 1.15);
   }
 
   #footerContent {
