@@ -148,6 +148,7 @@ a {
 }
 .expandDiv {
   margin-bottom: 0.5em;
+  text-align: center;
 }
 .expand {
   color: #3d3a59;
@@ -164,24 +165,25 @@ a {
 }
 
 #homeButton {
-  margin: 0.5em 1em;
-  text-align: right;
-  position: absolute;
-  bottom: -0.89em;
-  right: 0;
+  display: none;
 }
 
-#homeButton a {
+#homeButton2 {
+  margin: 0.5em 1em;
+  text-align: center;
+}
+
+#homeButton2 a {
   color: white;
   font-weight: lighter;
   font-size: x-large;
 }
 
-#homeButton a:hover {
-  color: #3d3a59;
+#homeButton2 a:hover {
+  color: rgb(255, 223, 111);
 }
 #galleryTitle {
-  margin-top: 1em;
+  margin-top: 0.25em;
   color: white;
   margin-bottom: 0;
 }
@@ -257,6 +259,29 @@ footer {
     display: block;
   }
 
+  #homeButton2 {
+    display: none;
+  }
+
+  #homeButton {
+    display: contents;
+    margin: 0.5em 1em;
+    text-align: right;
+  }
+
+  #homeButton a {
+    color: white;
+    font-weight: lighter;
+    font-size: x-large;
+    position: absolute;
+    bottom: -0.3em;
+    right: 0;
+  }
+
+  #homeButton a:hover {
+    color: #3d3a59;
+  }
+
   .expandDiv {
     display: none;
   }
@@ -267,6 +292,10 @@ footer {
 
   img.sitePreview:hover {
     transform: scale(1.15, 1.15);
+  }
+
+  #galleryTitle {
+    margin-top: 1em;
   }
 
   #expBack {
@@ -394,6 +423,34 @@ footer {
   #homeProgress {
     display: block;
   }
+
+  #homeButton2 {
+    display: none;
+  }
+
+  #galleryTitle {
+    margin-top: 1em;
+  }
+
+  #homeButton {
+    display: contents;
+    margin: 0.5em 1em;
+    text-align: right;
+  }
+
+  #homeButton a {
+    color: white;
+    font-weight: lighter;
+    font-size: x-large;
+    position: absolute;
+    bottom: -0.3em;
+    right: 0;
+  }
+
+  #homeButton a:hover {
+    color: #3d3a59;
+  }
+
   .expandDiv {
     display: none;
   }
@@ -444,13 +501,14 @@ footer {
     grid-template-rows: 3em 10em 3em;
     justify-items: center;
     align-items: center;
-    row-gap: 1.5em;
+    row-gap: 1em;
   }
   #ProjectsTwo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 2em;
+    column-gap: 1em;
     padding: 1.5em;
     margin-bottom: 2em;
   }
@@ -492,13 +550,18 @@ footer {
   }
 
   img.sitePreview {
-    width: 10em;
+    width: 8em;
   }
 
   img.sitePreview:hover {
     transform: scale(1.15, 1.15);
   }
 
+  #SmallerWidth {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.5em;
+  }
   #footerContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
