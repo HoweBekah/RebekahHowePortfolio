@@ -484,6 +484,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  } 
+  #vys {
+    grid-row: 1;
+    grid-column: 1;
   }
   #tidbits {
     grid-row: 1;
@@ -497,11 +501,7 @@ footer {
     grid-row: 2;
     grid-column: 2;
   }
-  #vys {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
+ 
   #tidbits img,
   #idweather img,
   #standardWorks img,
@@ -527,39 +527,39 @@ footer {
     padding: 1.5em;
     margin-bottom: 2em;
   }
-  #tidbitsTwo {
+  #vysTwo {
     grid-row: 1;
     grid-column: 1;
+  }
+  #tidbitsTwo {
+    grid-row: 1;
+    grid-column: 2;
   }
   #yana {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 3;
   }
   #idweatherTwo {
-    grid-row: 1;
-    grid-column: 3;
+    grid-row: 2;
+    grid-column: 1;
   }
   #kooky {
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 2;
   }
   #temple {
     grid-row: 2;
-    grid-column: 2;
-  }
-  #hale {
-    grid-row: 2;
     grid-column: 3;
   }
-  #standardWorksTwo {
+  #hale {
     grid-row: 3;
     grid-column: 1;
   }
-  #cookbookTwo {
+  #standardWorksTwo {
     grid-row: 3;
     grid-column: 2;
   }
-  #joy {
+  #cookbookTwo {
     grid-row: 3;
     grid-column: 3;
   }
