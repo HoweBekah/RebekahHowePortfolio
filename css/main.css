@@ -481,25 +481,29 @@ footer {
   }
   #tidbits {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
   }
   #idweather {
-    grid-row: 1;
-    grid-column: 2;
+    grid-row: 2;
+    grid-column: 1;
   }
   #standardWorks {
     grid-row: 2;
+    grid-column: 2;
+  }
+  #vys {
+    grid-row: 1;
     grid-column: 1;
   }
-  #cookbook {
-    grid-row: 2;
-    grid-column: 2;
+
+  #vysLogo{
+    border-radius: .5em;
   }
 
   #tidbits img,
   #idweather img,
   #standardWorks img,
-  #cookbook img {
+  #vys img {
     width: 10em;
   }
 
