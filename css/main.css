@@ -248,6 +248,11 @@ footer {
 #footerImg img {
   border-radius: 10px;
 }
+
+#vysLogo{
+  border-radius: 1.5em;
+}
+
 @media screen and (min-width: 480px) and (max-width: 800px) {
   #content {
     width: 80%;
@@ -494,10 +499,6 @@ footer {
   #vys {
     grid-row: 1;
     grid-column: 1;
-  }
-
-  #vysLogo{
-    border-radius: 1.5em;
   }
 
   #tidbits img,
