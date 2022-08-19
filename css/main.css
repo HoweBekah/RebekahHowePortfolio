@@ -36,6 +36,10 @@ header {
   border-radius: 10px;
 }
 
+#etsyLink{
+  font-weight: bolder;
+}
+
 #logo {
   margin-right: 0.5em;
   grid-column: 1;
