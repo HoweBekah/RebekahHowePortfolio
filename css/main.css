@@ -37,7 +37,12 @@ header {
 }
 
 #etsyLink{
-  font-weight: bolder;
+  color: white;
+  font-weight: 1.5em;
+}
+
+#etsyLink:hover{
+  color: #170b0b;
 }
 
 #logo {
